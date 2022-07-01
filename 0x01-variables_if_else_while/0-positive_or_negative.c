@@ -8,7 +8,7 @@
  * Return: Always 0 (correct)
  */
 
-intmain(void)
+int main(void)
 {
 	int n;
 
@@ -22,7 +22,7 @@ intmain(void)
 
 	else if (n < 0)
 	{
-		printf("%i is zero\n", n);
+		printf("%i is negative\n", n);
 	}
 
 	else
