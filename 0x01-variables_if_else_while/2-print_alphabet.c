@@ -8,13 +8,14 @@
  */
 int main(void)
 {
-char alhabet;
-for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
-{
-putchar(alphabet);
-}
+	char alphabet;
 
-putchar('\n');
+	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
+	{
+		putchar(alphabet);
+	}
+
+	putchar('\n');
 
 return (0);
 
