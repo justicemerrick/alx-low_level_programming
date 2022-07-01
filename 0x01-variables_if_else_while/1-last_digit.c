@@ -19,11 +19,11 @@ if (n > 5)
 {
 	printf("greater than 5");
 }
-if (n == 0)
+else if (n == 0)
 {
 	printf("0");
 }
-if (n < 0 && n != 0)
+else (n < 0 && n != 0)
 {
 	printf("less than 6 not 0");
 }
