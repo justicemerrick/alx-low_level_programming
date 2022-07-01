@@ -3,32 +3,28 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - Prints a random number and states whether
  *
- * Return: Always 0 (Correct)
+ * Return: Always 0.
  */
-
 int main(void)
 {
-int n;
+	int n;
 
-srand(time(0));
-n = rand() - RAND_MAX / 2;
-printf("Last digit of %d is ", n);
-if (n > 5)
-{
-	printf("greater than 5");
-}
-if ( n == 0)
-{
-	printf("0");
-}
-else
-{
-	printf("less than 6 not 0");
-}
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	if ((n % 10) > 5)
+	{
+		printf("Last digit of %d is %d and is greater than 5\n", n, n % 10);
+	}
+	else if ((n % 10) < 6 && (n % 10) != 0)
+	{
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, n % 10);
+	}
+	else
+	{
+		printf("Last digit of %d is %d and is 0\n", n, n % 10);
+	}
 
-printf("\n");
-
-return (0);
+	return (0);
 }
