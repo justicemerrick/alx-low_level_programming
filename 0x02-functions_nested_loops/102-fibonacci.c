@@ -7,24 +7,24 @@
  */
 int main(void)
 {
-	int i = 0;
+	Long int i, x, y, next;
 
-	Long int a = 0, b = 1, next;
-
-	while (i < 50)
+	x = 1;
+	y = 2;
+	for (i = 1; i <= 50; ++i)
 	{
-		next = a + b;
-		a = b;
-		b = next;
-		printf("%lu", next);
-
-		if (i < 49)
+		if (x != 20365011074)
 		{
-			print(", ");
+			printf("%ld, ", x);
 		}
-		i++;
-	}
-	putchar('\n');
+		else
+		{
+		printf("%ld\n", x);
+		}
 
+		next = x + y;
+		x = y;
+		y = next;
+	}
 	return (0);
 }
