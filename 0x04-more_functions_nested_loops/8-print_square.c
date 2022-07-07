@@ -2,7 +2,7 @@
 
 /**
  * print_square - a function that prints a square
- * @size: the size of the square to be printed
+ * @size: the size to be printed
  *
  * Return: 0
  */
@@ -14,7 +14,7 @@ void print_square(int size)
 	{
 		for (length = 0; length < size; length++)
 		{
-			for (height = 0; heigth < size; height++)
+			for (height = 0; height < size; height++)
 				_putchar('#');
 
 			if (length == size - 1)
