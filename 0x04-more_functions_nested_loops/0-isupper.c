@@ -7,9 +7,13 @@
  */
 int _isupper(int c)
 {
-	if (c >= 'A' && c <= 'Z')
-		return (1);
+	char i;
+	int is_upper = 0;
 
-	else
-		return (0);
+	for (i = 'A'; i <= 'Z'; i++)
+	{
+		if (i == c)
+			is_upper = 1;
+	}
+	return (is_upper);
 }
