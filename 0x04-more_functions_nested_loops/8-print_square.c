@@ -10,22 +10,17 @@ void print_square(int size)
 {
 	int length, height;
 
-	if (size <= 0)
+	if (size > 0)
 	{
-		_putchar('\n');
-	}
-	else
-	{
-		for (length = 0; length < size; lenght++)
+		for (length = 0; length < size; length++)
 		{
-			for (height = 0; height < size; height++)
-			{
+			for (height = 0; heigth < size; height++)
 				_putchar('#');
-			}
+
 			if (length == size - 1)
 				continue;
 			_putchar('\n');
 		}
-		_putchar('\n');
 	}
+	_putchar('\n');
 }
