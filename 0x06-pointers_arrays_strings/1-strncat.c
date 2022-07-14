@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * _strcat - concatenates two strings with a given number of bytes
+ * _strncat - concatenates two strings with a given number of bytes
  * @src: The source of strings
  * @dest: The destination of the string
  * @n: The length of int
