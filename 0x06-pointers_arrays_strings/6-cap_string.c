@@ -20,7 +20,7 @@ char *cap_string(char *c)
 		y = 0;
 		while (str[y] != '\0')
 		{
-			if (str[y] == c[x] && (c[x + 1] >= 97 && c[i + 1] <= 122))
+			if (str[y] == c[x] && (c[x + 1] >= 97 && c[x + 1] <= 122))
 			{
 				c[x + 1] = c[x + 1] - 32;
 			}
