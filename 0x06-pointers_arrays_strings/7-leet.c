@@ -8,7 +8,7 @@
 char *leet(char *c)
 {
 	int x, y;
-	char i[] = {'A', 'E', 'O', 'T', 'L'};
+	char i[] = {'A', 'a', 'E', 'e', 'O', 'o', 'T', 't', 'L', 'l'};
 	char j[] = {'4', '3', '0', '7', '1'};
 
 	for (x = 0; c[x] != '\0'; x++)
