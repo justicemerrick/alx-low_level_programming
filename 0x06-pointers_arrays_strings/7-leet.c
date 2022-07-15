@@ -15,7 +15,7 @@ char *leet(char *c)
 	{
 		y = 0;
 
-		while (y < 1)
+		while (y < n)
 		{
 			if (c[x]  == i[y] || c[x] - 32 == i[b])
 			{
