@@ -2,9 +2,9 @@
 #include "main.h"
 /**
  * print_number - prints an integer
- * @c: input int
+ * @c: input integer
  *
- * Return: Void.
+ * Return: void.
  */
 void print_number(int c)
 {
