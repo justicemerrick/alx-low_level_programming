@@ -16,7 +16,7 @@ char *_strpbrk(char *s, char *accept)
 	{
 		y = 0;
 
-		while (accepted[y])
+		while (accept[y])
 		{
 			if (s[x] == accept[y])
 			{
