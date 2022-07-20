@@ -11,9 +11,9 @@ int _sqrt_recursion(int n)
 }
 
 /**
- * _sqrt - Square root
+ * _sqrt - _sqrt_recursion
  * @n: integer parameter
- * @y: integer y
+ * @y: integer parameter
  *
  * Return: sqrt
  */
@@ -23,8 +23,7 @@ int _sqrt(int n, int y)
 		return (-1);
 	if ((y * y) > n)
 		return (-1);
-	if (y * y == n)
+	if ((y * y) == n)
 		return (y);
 	return (_sqrt(n, y + 1));
 }
-
