@@ -12,18 +12,18 @@ int _sqrt_recursion(int n)
 
 /**
  * _sqrt - Square root
- * @x: integer x
+ * @n: integer parameter
  * @y: integer y
  *
  * Return: sqrt
  */
-int _sqrt(int x, int y)
+int _sqrt(int n, int y)
 {
-	if (x < 0)
+	if (n < 0)
 		return (-1);
-	if ((y * y) > x)
+	if ((y * y) > n)
 		return (-1);
-	if (y * y == x)
+	if (y * y == n)
 		return (y);
 	return (_sqrt(n, y + 1));
 }
