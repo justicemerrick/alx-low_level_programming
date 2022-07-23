@@ -1,23 +1,28 @@
 #include "main.h"
 
 /**
- * *_memcpy - copies memory area
- *
- * @dest: destination memory area
- * @src: source memory area.
- * @n: bytes filled.
- *
- * Return: the pointer to dest.
+ * _strspn - gets the length of the prefix substring
+ * @s: string where substring will look
+ * @accept: substring of accepred chars
+ * Return: length of occurance
  */
-
-char *_memcpy(char *dest, char *src, unsigned int n)
+unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int x;
+	unsigned int c = 0;
+	char *t = accept;
 
-	for (x = 0; x < n; x++)
+	while (*s++)
 	{
-		dest[x] = src[x];
+		while (*accept++)
+			if (*(s - 1) == *(accept - 1))
+			{
+				c++;
+				break;
+			}
+		if (!(*--accept))
+			break;
+		accept = t;
 	}
 
-	return (dest);
+	return (c);
 }

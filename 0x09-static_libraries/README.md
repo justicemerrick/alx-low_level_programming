@@ -1,1 +1,1 @@
-This folder contains files from the c static libraries project
+## 0x09. C - Static libraries

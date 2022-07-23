@@ -1,22 +1,32 @@
 #include "main.h"
 
 /**
- * *_memcpy - copies memory area
- *
- * @dest: destination memory area
- * @src: source memory area.
- * @n: bytes filled.
- *
- * Return: the pointer to dest.
+ * _strstr - function locate
+ * @haystack: pointer to char
+ * @needle: pointer to char
+ * Return: 0
  */
-char *_memcpy(char *dest, char *src, unsigned int n)
+char *_strstr(char *haystack, char *needle)
 {
-	unsigned int x;
+	char *result = haystack, *fneedle = needle;
 
-	for (x = 0; x < n; x++)
+	while (*haystack)
 	{
-		dest[x] = src[x];
+		while (*needle)
+		{
+			if (*haystack++ != *needle++)
+			{
+				break;
+			}
+		}
+		if (!*needle)
+		{
+			return (result);
+		}
+		needle = fneedle;
+		result++;
+		haystack = result;
 	}
 
-	return (dest);
+	return (0);
 }
