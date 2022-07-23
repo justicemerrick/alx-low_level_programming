@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * _strncpy - concatenates two strings
+ * *_strncpy - concatenates two strings
  * @src: The source of strings
  * @dest: The destination of the string
  * @n: The length of int
