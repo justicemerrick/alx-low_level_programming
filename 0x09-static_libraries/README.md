@@ -1,1 +1,1 @@
-## 0x09. C - Static libraries
+This folder contais files for the static libraries alx project
