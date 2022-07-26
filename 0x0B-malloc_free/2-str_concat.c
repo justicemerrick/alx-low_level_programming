@@ -9,7 +9,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *str;
-	int len1, len2;
+	int len1 = 0, len2 = 0;
 	int x, y;
 
 	if (s1 == NULL)
@@ -24,7 +24,8 @@ char *str_concat(char *s1, char *s2)
 	str = malloc(sizeof(char) * (len1 + len2));
 	if (str == NULL)
 		return (NULL);
-	x = y = 0;
+	x = 0;
+	y = 0;
 	while (s1[x])
 		str[y++] = s1[x++];
 	x = 0;
