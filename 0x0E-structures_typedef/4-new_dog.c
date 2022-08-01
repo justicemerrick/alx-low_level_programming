@@ -6,7 +6,7 @@
  * @age: second member
  * @owner: third member
  *
- * Return: NULL if function fails.
+ * Return: NULL if it fails.
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
@@ -21,6 +21,12 @@ dog_t *new_dog(char *name, float age, char *owner)
 	while (owner[lenO] != '\0')
 		lenO++;
 
+	n_dog = malloc(sizeof(struct dog));
+	if (n_dog == NULL)
+	{
+		free(n_dog);
+		retur (NULL);
+	}
 	n_dog->name = malloc(lenN + 1);
 	if (n_dog->name == NULL)
 	{
