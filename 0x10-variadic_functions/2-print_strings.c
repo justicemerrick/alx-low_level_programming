@@ -1,14 +1,9 @@
-/*
- * File: 2-print_strings.c
- * Auth: Tolulope Fakunle
- */
-
 #include "variadic_functions.h"
 #include <stdio.h>
 #include <stdarg.h>
 
 /**
- * print_strings - Prints strings, followed by a new line.
+ * print_strings - a function that prints strings, followed by \n.
  * @separator: The string to be printed between strings.
  * @n: The number of strings passed to the function.
  * @...: A variable number of strings to be printed.
