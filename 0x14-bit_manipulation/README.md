@@ -1,1 +1,1 @@
-This is a readme of the 0x14. C - Bit manipulation project
+This is my README.md file for 0x14-bit_manipulation
